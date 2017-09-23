@@ -10,7 +10,7 @@ homepage = sys.argv[2]
 DOMAIN_NAME = get_domain_name(homepage)
 QUEUE_FILE = project_name + '/queue.txt'
 CRAWLED_FILE = project_name + '/crawled.txt'
-NUMBER_OF_THREADS = 64
+NUMBER_OF_THREADS = 16
 
 queue = Queue()
 Spider(project_name, homepage, DOMAIN_NAME)
